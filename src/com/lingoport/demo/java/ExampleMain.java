@@ -49,10 +49,32 @@ public class ExampleMain {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ExamplePanel panel = new ExamplePanel();
         frame.getContentPane().add(panel);
+	changeFont(frame, new Font("Courier", Font.BOLD,28));
         frame.pack();
         frame.setVisible(true);
         String strTitle = "Example Address Book -- " + locale;
         frame.setTitle(strTitle);
     }
+	
+   /**
+     *  Sets the Font for all the components of one container, 
+     *  traversing the tree of containers and their components.
+     *  
+     * @param component
+     * @param font
+     */
+    public static void changeFont ( Component component, Font font )
+    {
+        component.setFont ( font );
+        if ( component instanceof Container )
+        {
+            for ( Component child : ( ( Container ) component ).getComponents () )
+            {
+                changeFont ( child, font );
+            }
+        }
+    }
+
+}
 
 }

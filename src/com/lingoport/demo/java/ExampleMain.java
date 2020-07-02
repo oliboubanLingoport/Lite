@@ -8,7 +8,7 @@ import com.lingoport.demo.java.utils.I18nUtils;
 
 
 /**
- * Example file for the i18n tutorial. 
+ * Example file for the i18n tutorial
  * This file has a hard coded string for the title of the frame.
  *
  */

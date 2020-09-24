@@ -6,7 +6,7 @@ import javax.swing.*;
 
 import com.lingoport.demo.java.utils.I18nUtils;
 
-// Express will scan with a change
+// Express will scan with any change
 
 
 /**

@@ -6,6 +6,8 @@ import javax.swing.*;
 
 import com.lingoport.demo.java.utils.I18nUtils;
 
+// Express will scan with a change
+
 
 /**
  * Example file for the i18n tutorial

@@ -27,12 +27,12 @@ public class ExampleMain {
     		
     		// Try to build with a variant
     		try {
-    			Locale candidateLocale = new Locale(localeStr[0], localeStr[1], localeStr[2]);
+    			Locale candidateLocale = new Locale(localeStr[0], localeStr[1], localeStr[2]); // $NON-NLS-L$
     			locale = candidateLocale;
     		} catch (Exception ignore) {
         		try {
         			// if bad, for whatever reason, try without variant
-        			Locale candidateLocale = new Locale(localeStr[0], localeStr[1]);
+        			Locale candidateLocale = new Locale(localeStr[0], localeStr[1]); // $NON-NLS-L$
         			locale = candidateLocale;
         		} catch (Exception ex) {
         			// If bad, just continue with the default locale

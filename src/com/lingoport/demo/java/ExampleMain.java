@@ -53,7 +53,7 @@ public class ExampleMain {
 	changeFont(frame, new Font("Courier", Font.BOLD,28));
         frame.pack();
         frame.setVisible(true);
-        String strTitle = "Address Book -- " + locale;
+        String strTitle = "Addresses -- " + locale;
         frame.setTitle(strTitle);
     }
 	
